@@ -127,21 +127,21 @@ body {
     text-align: left;
     margin: 85px 0 0 0;
 
-    #next-page {
-      opacity: 0;
-      width: 40px;
-      height: 40px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 20px;
-      background: url("https://jdniki.github.io/signup/images/next-page.svg");
-      background-size: contain;
+    // #next-page {
+    //   opacity: 0;
+    //   width: 40px;
+    //   height: 40px;
+    //   display: inline-block;
+    //   vertical-align: middle;
+    //   margin-left: 20px;
+    //   background: url("https://jdniki.github.io/signup/images/next-page.svg");
+    //   background-size: contain;
 
-      &:hover {
-        background: url("https://jdniki.github.io/signup/images/next-pagehover.svg");
-        background-size: contain;
-      }
-    }
+    //   &:hover {
+    //     background: url("https://jdniki.github.io/signup/images/next-pagehover.svg");
+    //     background-size: contain;
+    //   }
+    // }
 
     .questions {
       list-style: none;
