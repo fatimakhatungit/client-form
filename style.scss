@@ -88,7 +88,6 @@ body {
 
 .container {
   background: #fff;
-  color: #6A79A6;
   display: inline-block;
   padding: 0em 2em;
   margin: 6em auto;
@@ -215,7 +214,7 @@ body {
         }
 
         &:not(:first-child) {
-          // opacity: 0;
+          opacity: 0; 
           margin-top: 150px;
         }
 
@@ -375,7 +374,9 @@ body {
     }
   }
 }
+.signup{
 
+}
 .styled-checkbox {
   position: absolute; // take it out of document flow
   opacity: 0; // hide it
@@ -2228,4 +2229,15 @@ button:hover {
 
 #result {
   margin-bottom: 100px;
+}
+
+.error-message {
+  color: rgba(207, 0, 0, 0.56);
+  font-size: 14px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+ 
+}
+#wf{
+  color: #000;
 }
