@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="intlTelInput.css" rel="stylesheet" media="screen">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="welcome-screen-section">
+        <div class="welcome-screen-wrapper">
+            <div class="content">
+                <h1>Welcome to the 2023/2024 TKS Waitlist.</h1>
+                <p>Sign up to be the first to hear about when TKS Applications open for the 2023/2024 program year.</p>
+            </div>
+            <div class="form-button">
+                <button class="form-btn">Start</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="navigation">
+            <ol>
+                <li><a href="#" data-ref="name">Name</a></li>
+                <li><a href="#" data-ref="uname">Username</a></li>
+                <li><a href="#" data-ref="email">Email</a></li>
+                <li><a href="#" data-ref="viewpswd">Password</a></li>
+                <li><a href="#" data-ref="phone">Phone</a></li>
+            </ol>
+        </div>
+        <form id="sign-form" class="sign-form">
+            <div class="questions">
+                <ul>
+                    <li>
+                        <span class="sign-form-wrapper"><label for="name"><span class="number">1 <svg height="10"
+                                        width="11">
+                                        <path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
+                                        </path>
+                                        <path d="M8 4v2H0V4z"></path>
+                                    </svg></span> First Name*</label></span>
+                        <input class="active" id="name" name="name" type="text" placeholder="Type your answer here..."
+                            autofocus />
+                        <div class="form-button">
+                            <button class="form-btn">OK <svg height="13" width="16">
+                                    <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path>
+                                </svg></button>
+                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="sign-form-wrapper"><label for="uname"><span class="number">2 <svg height="10"
+                                        width="11">
+                                        <path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
+                                        </path>
+                                        <path d="M8 4v2H0V4z"></path>
+                                    </svg></span> Last Name*</label></span>
+                        <input id="uname" name="username" type="text" placeholder="Type your answer here..."
+                            autofocus />
+                        <div class="form-button">
+                            <button class="form-btn">OK <svg height="13" width="16">
+                                    <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path>
+                                </svg></button>
+                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="sign-form-wrapper"><label for="email"><span class="number">3 <svg height="10"
+                                        width="11">
+                                        <path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
+                                        </path>
+                                        <path d="M8 4v2H0V4z"></path>
+                                    </svg></span> What is your email address?*</label>
+                            <p>We will keep you updated on when TKS applications open, as well as other events and
+                                opportunities.</p>
+                        </span>
+                        <input id="email" name="email" type="text" placeholder="name@example.com" autofocus />
+                        <div class="form-button">
+                            <button class="form-btn">OK <svg height="13" width="16">
+                                    <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path>
+                                </svg></button>
+                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="sign-form-wrapper"><label for="phone"><span class="number">4 <svg height="10"
+                                        width="11">
+                                        <path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
+                                        </path>
+                                        <path d="M8 4v2H0V4z"></path>
+                                    </svg></span>Please provide your phone number if you would like to receive text
+                                message updates from us.</label>
+                            <input id="phone" type="tel" data-countryCode="US" placeholder="(201) 555-0123">
+                            <div class="form-button">
+                                <button class="form-btn">OK <svg height="13" width="16">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></button>
+                                <div class="bdDiBw">press <strong>Enter ↵</strong></div>
+                            </div>
+                            <!-- <select name="countryCode" class="country"  id="address-country" >
+                            <option data-countryCode="GB" value="91">(+91) INDIA </option>
+                            <option data-countryCode="GB" value="44">(+44) UK </option>
+                            <option data-countryCode="US" value="1">(+1) USA </option>
+                            <optgroup label="Other countries">
+                               <option data-countryCode="DZ" value="213"> (+213)Algeria</option>
+                               <option data-countryCode="AD" value="376"> (+376) Andorra</option>
+                               <option data-countryCode="AO" value="244">(+244) Angola </option>
+                               <option data-countryCode="AI" value="1264"> (+1264) Anguilla</option>
+                               <option data-countryCode="AG" value="1268">(+1268) Antigua &amp; Barbuda </option>
+                               <option data-countryCode="AR" value="54">(+54) Argentina </option>
+                               <option data-countryCode="AM" value="374"> (+374) Armenia</option>
+                               <option data-countryCode="AW" value="297">(+297) Aruba </option>
+                               <option data-countryCode="AU" value="61"> (+61) Australia</option>
+                               <option data-countryCode="AT" value="43">(+43) Austria </option>
+                               <option data-countryCode="AZ" value="994"> (+994) Azerbaijan</option>
+                               <option data-countryCode="BS" value="1242">(+1242)Bahamas </option>
+                            </optgroup>
+                        </select> -->
+                            <!-- <input id="phone" name="phone" type="text" autofocus /> -->
+                    </li>
+                    <li>
+                        <span class="sign-form-wrapper"><label for="program"><span class="number">5 <svg height="10"
+                                        width="11">
+                                        <path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
+                                        </path>
+                                        <path d="M8 4v2H0V4z"></path>
+                                    </svg></span>What program do you wish to join?*</label>
+                            <p>Please note, you must be able to attend one in-person session per week in Toronto, Ottawa and Vancouver. TKS does not sponsor students living outside these areas to move and join TKS.</p>
+                        </span>
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-item">
+                                <label class="form__label" for="cb-1">
+                                    <span class="caption"><span>A</span>Toronto</span>
+                                    <input id="cb-1" name="cb1" type="checkbox">
+                                  </label>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <button class="form-btn">OK <svg height="13" width="16">
+                                    <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path>
+                                </svg></button>
+                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span><label for="password">Choose a password</label></span>
+                        <input id="viewpswd" name="password" type="text" placeholder="this your password" />
+                        <input id="password" name="password" type="password" placeholder="make sure you dont forget"
+                            autofocus />
+                        <span id="show-pwd" class="view"></span>
+                    </li>
+                    <li>
+                        <p style="margin-top: 45px;font-size: 32pt;float:right">
+                            <a href="#" style="color:white;text-decoration:none" id="signup">sign up</a></p>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div id="next-page" alt="Kiwi standing on oval"></div>
+            <div class="error-message"></div>
+
+        </form>
+        <h1 id="wf" style="opacity:0;width: 600px; margin-top:1.1em;display:none; margin-bottom:1em">Thank you</h1>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/intlTelInput.min.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
