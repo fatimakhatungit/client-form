@@ -19,6 +19,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.welcome-screen-section {
+  position: relative;
+  overflow: hidden;
+}
+
 .welcome-screen-wrapper {
   width: 100%;
   max-width: 720px;
@@ -28,6 +33,13 @@ body {
   text-align: center;
   margin: 0px auto;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .welcome-screen-wrapper {
+    max-width: 100%;
+  }
 }
 .welcome-screen-wrapper .content {
   text-align: center;
@@ -80,6 +92,11 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .form-button .form-btn {
+    font-size: 20px;
+  }
+}
 .form-button .form-btn:hover {
   background-color: rgb(38, 38, 38);
 }
@@ -89,6 +106,8 @@ body {
   display: inline-block;
   padding: 0em 2em;
   margin: 6em auto;
+  position: relative;
+  overflow: hidden;
 }
 .container .navigation {
   text-align: left;
@@ -106,6 +125,11 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (max-width: 767px) {
+  .container .navigation ol li {
+    width: 100%;
+  }
+}
 .container .navigation ol li a {
   color: #fff;
   text-decoration: none;
@@ -115,9 +139,14 @@ body {
   opacity: 0;
 }
 .container .sign-form {
-  width: 600px;
+  width: 700px;
   text-align: left;
   margin: 85px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  .container .sign-form {
+    width: 100%;
+  }
 }
 .container .sign-form .questions {
   list-style: none;
@@ -129,7 +158,13 @@ body {
   color: #000;
   list-style: none;
   height: 100vh;
+  margin-top: 250px;
   /*-------------Password ------------------*/
+}
+@media screen and (max-width: 767px) {
+  .container .sign-form .questions li {
+    width: 100%;
+  }
 }
 .container .sign-form .questions li .sign-form-wrapper {
   margin-bottom: 40px;
@@ -143,6 +178,11 @@ body {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .container .sign-form .questions li label {
+    font-size: 20px;
+  }
 }
 .container .sign-form .questions li p {
   font-family: "Poppins", sans-serif;
@@ -174,11 +214,17 @@ body {
   padding: 0.5em 0.1em;
   transition: all 0.5s ease;
 }
+@media screen and (max-width: 767px) {
+  .container .sign-form .questions li input {
+    font-size: 20px;
+  }
+}
 .container .sign-form .questions li input:focus {
   outline: none;
   border-bottom: 3px solid #000;
 }
 .container .sign-form .questions li:not(:first-child) {
+  opacity: 0;
   margin-top: 150px;
 }
 .container .sign-form .questions li #viewpswd {

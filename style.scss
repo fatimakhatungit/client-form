@@ -18,7 +18,10 @@ body {
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
-
+.welcome-screen-section{
+  position: relative;
+  overflow: hidden;
+}
 .welcome-screen-wrapper {
   width: 100%;
   max-width: 720px;
@@ -28,6 +31,11 @@ body {
   text-align: center;
   margin: 0px auto;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 767px) { 
+    max-width: 100%;
+  }
 
   .content {
     text-align: center;
@@ -85,6 +93,9 @@ body {
     margin-top: 40px;
     transition: 0.3s;
     cursor: pointer;
+    @media screen and (max-width: 767px) { 
+      font-size: 20px;
+    }
     
 
     &:hover {
@@ -98,6 +109,8 @@ body {
   display: inline-block;
   padding: 0em 2em;
   margin: 6em auto;
+  position: relative;
+  overflow: hidden;
 
   .navigation {
     text-align: left;
@@ -113,6 +126,9 @@ body {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        @media screen and (max-width: 767px) { 
+          width: 100%;
+        }
 
         a {
           color: #fff;
@@ -130,9 +146,12 @@ body {
   }
 
   .sign-form {
-    width: 600px;
+    width: 700px;
     text-align: left;
     margin: 85px 0 0 0;
+    @media screen and (max-width: 767px) { 
+      width: 100%;
+    }
 
     // #next-page {
     //   opacity: 0;
@@ -165,6 +184,10 @@ body {
         color: #000;
         list-style: none;
         height: 100vh;
+        margin-top: 250px;
+        @media screen and (max-width: 767px) { 
+          width: 100%;
+        }
 
         .sign-form-wrapper {
           margin-bottom: 40px;
@@ -179,6 +202,9 @@ body {
           font-size: 24px;
           line-height: 24px;
           margin-bottom: 20px;
+          @media screen and (max-width: 767px) { 
+            font-size: 20px;
+          }
 
         }
 
@@ -214,6 +240,9 @@ body {
           border-bottom: 1px solid rgba(0, 0, 0, 0.3);
           padding: 0.5em 0.1em;
           transition: all 0.5s ease;
+          @media screen and (max-width: 767px) { 
+            font-size: 20px;
+          }
 
           &:focus {
             outline: none;
@@ -222,7 +251,7 @@ body {
         }
 
         &:not(:first-child) {
-          // opacity: 0; 
+          opacity: 0; 
           margin-top: 150px;
         }
 
