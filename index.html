@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="intlTelInput.css" rel="stylesheet" media="screen">
 
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,6 +38,7 @@
                 <li><a href="#" data-ref="email">Email</a></li>
                 <li><a href="#" data-ref="viewpswd">Password</a></li>
                 <li><a href="#" data-ref="phone">Phone</a></li>
+                <li><a href="#" data-ref="program">program</a></li>
             </ol>
         </div>
         <form id="sign-form" class="sign-form">
@@ -52,7 +54,7 @@
                         <input class="active" id="name" name="name" type="text" placeholder="Type your answer here..."
                             autofocus />
                         <div class="form-button">
-                            <button  id="next-page" class="form-btn">OK <svg height="13" width="16">
+                            <button id="next-page" class="form-btn">OK <svg height="13" width="16">
                                     <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path>
                                 </svg></button>
                             <div class="bdDiBw">press <strong>Enter ↵</strong></div>
@@ -93,6 +95,10 @@
                             <div class="bdDiBw">press <strong>Enter ↵</strong></div>
                         </div>
                     </li>
+                    <!-- <li>
+				        <span><label for="call">& what shall we call you?</label></span>
+                        <input id="call" name="username" type="text" placeholder="Enter a username" autofocus/>
+					</li>  -->
 
                     <li>
                         <span class="sign-form-wrapper"><label for="phone"><span class="number">4 <svg height="10"
@@ -102,7 +108,7 @@
                                         <path d="M8 4v2H0V4z"></path>
                                     </svg></span>Please provide your phone number if you would like to receive text
                                 message updates from us.</label>
-                            <input id="phone" type="tel" data-countryCode="US" placeholder="(201) 555-0123">
+                            <input id="phone" type="tel" data-countryCode="US" placeholder="(201) 555-0123" autofocus/>
                             <div class="form-button">
                                 <button class="form-btn">OK <svg height="13" width="16">
                                         <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
@@ -111,7 +117,9 @@
                                 <div class="bdDiBw">press <strong>Enter ↵</strong></div>
                             </div>
                     </li>
+                  
                     <li>
+                        
                         <span class="sign-form-wrapper"><label for="program"><span class="number">5 <svg height="10"
                                         width="11">
                                         <path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
@@ -120,11 +128,12 @@
                                     </svg></span>What program do you wish to join?*</label>
                             <p>Please note, you must be able to attend one in-person session per week in Toronto, Ottawa and Vancouver. TKS does not sponsor students living outside these areas to move and join TKS.</p>
                         </span>
+                   
                         <div class="checkbox-wrapper">
                             <div class="checkbox-item">
                                 <div class="input-fill" for="cb-1">
                                     <label for="styled-checkbox-1" class="caption"><span>A</span>Toronto</label>
-                                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" autofocus/>
                                     <label for="styled-checkbox-1"></label>
                                   </div>
                                  
@@ -161,6 +170,7 @@
                             <div class="bdDiBw">press <strong>Enter ↵</strong></div>
                         </div>
                     </li>
+                  
                     <li>
                         <span class="sign-form-wrapper"><label for="person"><span class="number">6 <svg height="10"
                                         width="11">
@@ -435,7 +445,6 @@ You can also join our TKS Discord Community, where we post updates and send out 
 We encourage you to apply to TKS again next year when our applications open up in early 2023.</h1>
 
         <script src="js/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/intlTelInput.min.js"></script>
         <script src="js/utils.js"></script>
         <script src="js/main.js"></script>

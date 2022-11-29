@@ -57,6 +57,7 @@ $(document).ready(function() {
       } else if (focusInput.attr('name') == 'phone' && !validatePhone(focusInput.val())) {
         errorMessage(erroEle, "It doesn't look like a " + focusInput.attr('name'), 'visible', 1);
       } else {
+        
 
         if (type != 'navi') showLi(focusInput);
         $('#next-page').css('opacity', 0);
@@ -174,6 +175,7 @@ function validatePhone(phone) {
 
 
 
+
 var telInput = $("#phone"),
   errorMsg = $("#error-msg"),
   validMsg = $("#valid-msg");
@@ -226,6 +228,5 @@ telInput.blur(function() {
 
 // on keyup / change flag: reset
 telInput.on("keyup change", reset);
-
 
 

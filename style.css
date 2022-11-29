@@ -514,6 +514,7 @@ body {
 .intl-tel-input .country-list .country {
   padding: 5px 10px;
   margin: 0 !important;
+  height: auto !important;
 }
 
 .intl-tel-input .country-list .country .dial-code {
