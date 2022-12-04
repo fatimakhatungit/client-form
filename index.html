@@ -10,531 +10,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="intlTelInput.css" rel="stylesheet" media="screen">
-
-
     <!-- Main CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="welcome-screen-section">
-        <div class="welcome-screen-wrapper">
-            <div class="content">
-                <h1>Welcome to the 2023/2024 TKS Waitlist.</h1>
-                <p>Sign up to be the first to hear about when TKS Applications open for the 2023/2024 program year.</p>
-                <div class="form-button form-button-two">
-                    <button class="form-btn modal-toggle"">Start</button>
-                </div> 
-            </div>
+<section class="welcome-screen-section">
+    <div class="welcome-screen-wrapper">
+        <div class="content">
+            <h1>Welcome to the 2023/2024 TKS Waitlist.</h1>
+            <p>Sign up to be the first to hear about when TKS Applications open for the 2023/2024 program year.</p>
+            <div class="form-button form-button-two">
+                <button id="start-form" class="form-btn">Start</button>
+            </div> 
         </div>
-    
-
-    <div class=" container modal">
-                        <div class="modal-overlay modal-toggle"></div>
-                        <div class="modal-transition">
-                         <div class=" navigation">
-                            <ol>
-                                <li><a href="#" data-ref="name">Name</a></li>
-                                <li><a href="#" data-ref="uname">Username</a></li>
-                                <li><a href="#" data-ref="email">Email</a></li>
-                                <li><a href="#" data-ref="viewpswd">Password</a></li>
-                                <li><a href="#" data-ref="phone">Phone</a></li>
-                                <li><a href="#" data-ref="program">program</a></li>
-                            </ol>
-                        </div>
-                        <form id="sign-form" class="sign-form">
-                            <div class="questions">
-                                <ul>
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="name"><span class="number">1 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span> First Name*</label></span>
-                                        <input class="active" id="name" name="name" type="text"
-                                            placeholder="Type your answer here..." autofocus />
-                                        <div class="form-button">
-                                            <button id="next-page" class="form-btn">OK <svg height="13" width="16">
-                                                    <path
-                                                        d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                    </path>
-                                                </svg></button>
-                                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                        </div>
-                                        
-                                    </li>
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="uname"><span class="number">2 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span> Last Name*</label></span>
-                                        <input id="uname" name="username" type="text"
-                                            placeholder="Type your answer here..." autofocus />
-                                        <div class="form-button">
-                                            <button class="form-btn">OK <svg height="13" width="16">
-                                                    <path
-                                                        d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                    </path>
-                                                </svg></button>
-                                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="email"><span class="number">3 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span> What is your email address?*</label>
-                                            <p>We will keep you updated on when TKS applications open, as well as other
-                                                events and
-                                                opportunities.</p>
-                                        </span>
-                                        <input id="email" name="email" type="text" placeholder="name@example.com"
-                                            autofocus />
-                                        <div class="form-button">
-                                            <button class="form-btn">OK <svg height="13" width="16">
-                                                    <path
-                                                        d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                    </path>
-                                                </svg></button>
-                                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                        </div>
-                                    </li>
-                                    <!-- <li>
-				        <span><label for="call">& what shall we call you?</label></span>
-                        <input id="call" name="username" type="text" placeholder="Enter a username" autofocus/>
-					</li>  -->
-
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="phone"><span class="number">4 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span>Please provide your phone number if you would like to
-                                                receive text
-                                                message updates from us.</label>
-                                            <input id="phone" type="tel" data-countryCode="US"
-                                                placeholder="(201) 555-0123" autofocus />
-                                            <div class="form-button">
-                                                <button class="form-btn">OK <svg height="13" width="16">
-                                                        <path
-                                                            d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                        </path>
-                                                    </svg></button>
-                                                <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                            </div>
-                                    </li>
-
-                                    <li>
-
-                                        <span class="sign-form-wrapper"><label for="program"><span class="number">5 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span>What program do you wish to join?*</label>
-                                            <p>Please note, you must be able to attend one in-person session per week in
-                                                Toronto, Ottawa and Vancouver. TKS does not sponsor students living
-                                                outside these areas to move and join TKS.</p>
-                                        </span>
-
-                                        <div class="checkbox-wrapper">
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="styled-checkbox-1"
-                                                        class="caption"><span>A</span>Toronto</label>
-                                                    <input class="styled-checkbox" id="styled-checkbox-1"
-                                                        type="checkbox" value="value1" autofocus />
-                                                    <label for="styled-checkbox-1"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="styled-checkbox-2"
-                                                        class="caption"><span>B</span>Ottawa</label>
-                                                    <input class="styled-checkbox" id="styled-checkbox-2"
-                                                        type="checkbox" value="value1">
-                                                    <label for="styled-checkbox-2"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="styled-checkbox-3"
-                                                        class="caption"><span>C</span>Vancouver</label>
-                                                    <input class="styled-checkbox" id="styled-checkbox-3"
-                                                        type="checkbox" value="value1">
-                                                    <label for="styled-checkbox-3"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="styled-checkbox-4" class="caption"><span>D</span>Global
-                                                        Virtual Program</label>
-                                                    <input class="styled-checkbox" id="styled-checkbox-4"
-                                                        type="checkbox" value="value1">
-                                                    <label for="styled-checkbox-4"></label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="form-button">
-                                            <button class="form-btn">OK <svg height="13" width="16">
-                                                    <path
-                                                        d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                    </path>
-                                                </svg></button>
-                                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="person"><span class="number">6 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span>Would you want to attend TKS in-person if we launched
-                                                in your city?*</label>
-
-                                        </span>
-                                        <div class="checkbox-wrapper">
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="yes" class="caption"><span>Y</span>Yes</label>
-                                                    <input class="styled-checkbox" id="yes" type="checkbox"
-                                                        value="valueyes">
-                                                    <label for="yes"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="no" class="caption"><span>N</span>No</label>
-                                                    <input class="styled-checkbox" id="no" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="no"></label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="form-button">
-                                            <button class="form-btn">OK <svg height="13" width="16">
-                                                    <path
-                                                        d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                    </path>
-                                                </svg></button>
-                                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="person"><span class="number">7 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span>What country do you live in?*</label>
-
-                                        </span>
-                                        <div class="checkbox-wrapper checkbox-wrapper-two">
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="1" class="caption"><span>A</span>Afghanistan</label>
-                                                    <input class="styled-checkbox" id="1" type="checkbox"
-                                                        value="value1">
-                                                    <label for="1"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="2" class="caption"><span>B</span>Albania</label>
-                                                    <input class="styled-checkbox" id="2" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="2"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="3" class="caption"><span>C</span>Albania</label>
-                                                    <input class="styled-checkbox" id="3" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="3"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="4" class="caption"><span>D</span>American Samoa</label>
-                                                    <input class="styled-checkbox" id="4" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="4"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="5" class="caption"><span>D</span>Andorra</label>
-                                                    <input class="styled-checkbox" id="5" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="5"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="6" class="caption"><span>E</span>Angola</label>
-                                                    <input class="styled-checkbox" id="6" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="6"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="7" class="caption"><span>F</span>Angola</label>
-                                                    <input class="styled-checkbox" id="7" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="7"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="8" class="caption"><span>g</span>Anguilla</label>
-                                                    <input class="styled-checkbox" id="8" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="8"></label>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <div class="form-button">
-                                            <button class="form-btn">OK <svg height="13" width="16">
-                                                    <path
-                                                        d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                    </path>
-                                                </svg></button>
-                                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="live"><span class="number">8 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span> What city do you live in?*</label></span>
-                                        <input id="live" name="lve" type="text" placeholder="Type your answer here..."
-                                            autofocus />
-                                        <div class="form-button">
-                                            <button class="form-btn">OK <svg height="13" width="16">
-                                                    <path
-                                                        d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
-                                                    </path>
-                                                </svg></button>
-                                            <div class="bdDiBw">press <strong>Enter ↵</strong></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="sign-form-wrapper"><label for="person"><span class="number">9 <svg
-                                                        height="10" width="11">
-                                                        <path
-                                                            d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z">
-                                                        </path>
-                                                        <path d="M8 4v2H0V4z"></path>
-                                                    </svg></span>How did you hear about TKS?This question is
-                                                required.*</label>
-                                            <p>Please select one or two options.</p>
-
-                                        </span>
-                                        <div class="checkbox-wrapper">
-                                            <p>You can choose 1 more</p>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="01" class="caption"><span>A</span>TKS Student or
-                                                        Alumni</label>
-                                                    <input class="styled-checkbox" id="01" type="checkbox"
-                                                        value="value1">
-                                                    <label for="01"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="02" class="caption"><span>B</span>Parents</label>
-                                                    <input class="styled-checkbox" id="02" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="02"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="03" class="caption"><span>C</span>My School</label>
-                                                    <input class="styled-checkbox" id="03" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="03"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="04" class="caption"><span>D</span>Student
-                                                        Organization</label>
-                                                    <input class="styled-checkbox" id="04" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="04"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="05" class="caption"><span>E</span>Email
-                                                        Newsletter</label>
-                                                    <input class="styled-checkbox" id="05" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="05"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="06" class="caption"><span>F</span>An
-                                                        Advertisement</label>
-                                                    <input class="styled-checkbox" id="06" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="06"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="07" class="caption"><span>G</span>Instagram</label>
-                                                    <input class="styled-checkbox" id="07" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="07"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="08" class="caption"><span>H</span>Tiktok</label>
-                                                    <input class="styled-checkbox" id="08" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="08"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="09" class="caption"><span>I</span>Twitter</label>
-                                                    <input class="styled-checkbox" id="09" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="09"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="10" class="caption"><span>J</span>Youtube</label>
-                                                    <input class="styled-checkbox" id="10" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="10"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="11" class="caption"><span>H</span>Google Search</label>
-                                                    <input class="styled-checkbox" id="11" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="11"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="12" class="caption"><span>K</span>Tallo</label>
-                                                    <input class="styled-checkbox" id="12" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="12"></label>
-                                                </div>
-
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <div class="input-fill" for="cb-1">
-                                                    <label for="13" class="caption"><span>M</span>Discord</label>
-                                                    <input class="styled-checkbox" id="13" type="checkbox"
-                                                        value="valueno">
-                                                    <label for="13"></label>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                    <div class="form-button">
-                                        <button id="signup" class="form-btn">Submit</button>
+    </div>  
+    <div class="form-popup-wrapper" id="form-overlay">
+        <div class="form-wrapper">
+            <form action="#">
+                <div class="swiper form-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="form-field-group">
+                                <div class="form-field">
+                                    <label for="fname"><span>1 <svg height="10" width="11"><path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z"></path><path d="M8 4v2H0V4z"></path></svg></span> First Name</label>
+                                    <input type="text" id="fname" class="form-input" placeholder="Type your answer here...">
+                                    <div class="next-fields">
+                                        <div class="next-button">OK <svg height="13" width="16"><path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path></svg></div>
+                                        <div class="next-enter">press Enter ↵</div>
                                     </div>
-
-                                </ul>
-
+                                </div>
                             </div>
-
-
-                            <div id="next-page" alt="Kiwi standing on oval"></div>
-                            <div class="error-message"></div>
-                        </form>
-                        
-
-                        <h1 id="wf" style="opacity:0;width: 600px; margin-top:1.1em;display:none; margin-bottom:1em">
-                            Thank you for joining out waitlist for the 2023/2024 program year.
-
-                            While you wait for applications to open, check out the resource package we have prepared to
-                            help you learn and grow outside of TKS.
-
-                            You can also join our TKS Discord Community, where we post updates and send out invitations
-                            to exclusive events.
-
-                            We encourage you to apply to TKS again next year when our applications open up in early
-                            2023.</h1>
-                            
-                </div>
-                
-     
-      </div> 
-      <div class="updown-wrpp">
-        <div class="updown-icon">
-           <i><svg height="9" width="14"><path d="M11.996 8.121l1.414-1.414L6.705 0 0 6.707l1.414 1.414 5.291-5.293z"></path></svg></i> 
-            <i><svg height="9" width="14"><path d="M12.293.293l1.414 1.414L7 8.414.293 1.707 1.707.293 7 5.586z"></path></svg></i>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="form-field-group">
+                                <div class="form-field">
+                                    <label for="lname"><span>2 <svg height="10" width="11"><path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z"></path><path d="M8 4v2H0V4z"></path></svg></span> Last Name</label>
+                                    <input type="text" id="lname" class="form-input" placeholder="Type your answer here...">
+                                    <div class="next-fields">
+                                        <div class="next-button">OK <svg height="13" width="16"><path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path></svg></div>
+                                        <div class="next-enter">press Enter ↵</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="form-field-group">
+                                <div class="form-field">
+                                    <label for="lname"><span>3 <svg height="10" width="11"><path d="M7.586 5L4.293 1.707 5.707.293 10.414 5 5.707 9.707 4.293 8.293z"></path><path d="M8 4v2H0V4z"></path></svg></span> What is your email address?</label>
+                                    <p>We will keep you updated on when TKS applications open, as well as other events and opportunities.                                    </p>
+                                    <input type="email" id="email" class="form-input" placeholder="example@example.com">
+                                    <div class="next-fields">
+                                        <div class="next-button">OK <svg height="13" width="16"><path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z"></path></svg></div>
+                                        <div class="next-enter">press Enter ↵</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-set">
+                        <div class="swiper-button-next"><i><svg height="9" width="14"><path d="M12.293.293l1.414 1.414L7 8.414.293 1.707 1.707.293 7 5.586z"></path></svg></i></div>
+                        <div class="swiper-button-prev"><i><svg height="9" width="14"><path d="M11.996 8.121l1.414-1.414L6.705 0 0 6.707l1.414 1.414 5.291-5.293z"></path></svg></i></div>
+                    </div>
+                    </div>
+            </form>
         </div>
-    </div>
+
+    </div>  
 </section>
 
-            <script src="js/jquery.min.js"></script>
-            <script src="js/intlTelInput.min.js"></script>
-            <script src="js/utils.js"></script>
-            <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
