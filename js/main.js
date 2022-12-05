@@ -4,9 +4,11 @@ $(document).ready(function () {
     e.preventDefault();
     $("#form-overlay").addClass("form-open");
   });
-
+  $(".next-button").on("click", function () {
+    $(".swiper-button-next").trigger("click");
+  });
   var swiper = new Swiper('.form-slider', {
-    //direction: 'vertical',
+    direction: 'vertical',
     slidesPerView: 1,
     mousewheel: false,
     simulateTouch: false,
